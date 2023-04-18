@@ -52,11 +52,11 @@ M.complete = function()
   set_loading(true)
 
   Api.completions({
-    model = "code-davinci-002",
+    model = "text-davinci-003",
     prompt = prefix,
     suffix = suffix,
-    max_tokens = 2048,
-    presence_penalty = 0.6,
+    max_tokens = 3182,
+    presence_penalty = 0.0,
   }, function(answer, usage)
     set_loading(false)
     local Popup = require("nui.popup")
